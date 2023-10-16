@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="SimpleCalculator.css">
+</head>
+<body>
+    
+    <h1>CALCULATOR</h1>
+    <table class="calculator">
+        <tr>
+            <td colspan="3"><input type="text" class="display-box" id="result">
+            </td>
+            <td><input type="button" value="AC" onclick="clearScreen()" class="green"> </td>
+            
+        </tr>
+        
+        <tr>
+            <td><input type="button" value="7" onclick="display(7)" class="Black"> </td>
+            <td><input type="button" value="8" onclick="display(8)" class="Black"> </td>
+            <td><input type="button" value="9" onclick="display(9)" class="Black"> </td>
+            <td><input type="button" value="+" onclick="display('+')" class="gray"> </td>
+
+        </tr>
+        <tr>
+           
+            <td><input type="button" value="4" onclick="display(4)" class="Black"> </td>
+            <td><input type="button" value="5" onclick="display(5)" class="Black"> </td>
+            <td><input type="button" value="6" onclick="display(6)" class="Black"> </td>
+            <td><input type="button" value="−" onclick="display('-')" class="gray"> </td>
+        </tr>
+        <tr>
+           
+            <td><input type="button" value="3" onclick="display(3)" class="Black"> </td>
+            <td><input type="button" value="2" onclick="display(2)" class="Black"> </td>
+            <td><input type="button" value="1" onclick="display(1)" class="Black"> </td>
+            <td><input type="button" value="÷" onclick="display('/')" class="gray"> </td>
+        </tr>
+        <tr>
+            
+            <td><input type="button" value="." onclick="display('.')" class="Black"> </td>
+            <td><input type="button" value="0" onclick="display(0)" class="Black"> </td>
+            <td><input type="button" value="=" id="btn" onclick="calculate()" class="Black"> </td>
+            <td><input type="button" value="×" onclick="display('*')" class="gray"> </td>
+        </tr>
+    </table>
+
+    <script>
+        function display(value){
+            document.getElementById("result").value+=value
+        }
+        function clearScreen(){
+            document.getElementById("result").value=" "
+        }
+        function calculate(){
+            var cal=document.getElementById("result").value
+            var output =eval(cal)
+            document.getElementById("result").value=output
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+h1{
+    color: black;
+    margin-left: 500px;
+    padding-top: 20px;   
+text-shadow: 2px 2px 4px #000000;
+}
+.calculator{
+    background-color: black;
+    margin-left: 450px;
+    
+}
+.Black{
+   background-color: black; 
+   color: white;
+   padding: 14px 28px;
+   text-align: center;
+   font-size: 16px;
+   cursor: pointer;
+}
+.gray{
+    background-color: gray; 
+   color: white;
+   padding: 14px 28px;
+   text-align: center;
+   font-size: 16px;
+   cursor: pointer;
+}
+.green{
+    background-color: rgb(104, 223, 213);
+    padding: 14px 22px;
+   text-align: center;
+   font-size: 16px;
+   cursor: pointer;
+}
+#result{
+    background-color: white;
+    padding: 14px 24px;
+    margin: auto;
+   font-size: 16px;
+   cursor: pointer;
+}
